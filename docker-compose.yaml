@@ -1,0 +1,71 @@
+version: '3.3'
+
+services:
+  postgres:
+    image: postgres:alpine
+    container_name: postgresdb
+    restart: always
+    ports:
+      - 5432:5432
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    environment:
+      - TZ=${TZ}
+      - POSTGRES_DB=${POSTGRES_DB}
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+
+  server:
+    image: amruthpillai/reactive-resume:server-latest
+    container_name: rxserver
+    restart: always
+    ports:
+      - 3100:3100
+    depends_on:
+      - postgres
+    environment:
+      - TZ=${TZ}
+      - PUBLIC_URL=${PUBLIC_URL}
+      - PUBLIC_SERVER_URL=${PUBLIC_SERVER_URL}
+      - PUBLIC_GOOGLE_CLIENT_ID=${PUBLIC_GOOGLE_CLIENT_ID}
+      - POSTGRES_DB=${POSTGRES_DB}
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+      - SECRET_KEY=${SECRET_KEY}
+      - POSTGRES_HOST=${POSTGRE_HOST}
+      - POSTGRES_PORT=${POSTGRE_PORT}
+      - POSTGRES_SSL_CERT=
+      - JWT_SECRET=${JWT_SECRET}
+      - JWT_EXPIRY_TIME=${JWT_EXPIRY_TIME}
+      - GOOGLE_CLIENT_SECRET=${GOOGLE_CLIENT_SECRET}
+      - GOOGLE_API_KEY=${GOOGLE_API_KEY}
+      - MAIL_FROM_NAME=${MAIL_FROM_NAME}
+      - MAIL_FROM_EMAIL=${MAIL_FROM_EMAIL}
+      - MAIL_HOST=${MAIL_HOST}
+      - MAIL_PORT=${MAIL_PORT}
+      - MAIL_USERNAME=${MAIL_USERNAME}
+      - MAIL_PASSWORD=${MAIL_PASSWORD}
+      - STORAGE_BUCKET=${STORAGE_BUCKET}
+      - STORAGE_REGION=${STORAGE_REGION}
+      - STORAGE_ENDPOINT=${STORAGE_ENDPOINT}
+      - STORAGE_URL_PREFIX=${STORAGE_URL_PREFIX}
+      - STORAGE_ACCESS_KEY=${STORAGE_ACCESS_KEY}
+      - STORAGE_SECRET_KEY=${STORAGE_SECRET_KEY}
+      - PDF_DELETION_TIME=${PDF_DELETION_TIME}
+
+  client:
+    image: amruthpillai/reactive-resume:client-latest
+    container_name: rxclient
+    restart: always
+    ports:
+      - 3000:3000
+    depends_on:
+      - server
+    environment:
+      - TZ=${TZ}
+      - PUBLIC_URL=${PUBLIC_URL}
+      - PUBLIC_SERVER_URL=${PUBLIC_SERVER_URL}
+      - PUBLIC_GOOGLE_CLIENT_ID=${PUBLIC_GOOGLE_CLIENT_ID}
+
+volumes:
+  pgdata:
