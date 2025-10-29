@@ -1,29 +1,7 @@
-# Android App
-/app
-
-# Schema
-schema/dist
-
-# Server
-server/dist
-
-# Client
-client/.next
-client/public/__ENV.js
-
-# IDEs
-.vscode
-
-# Project Metadata
-LICENSE
-README.md
-CHANGELOG.md
-
-# Project Dependencies
-node_modules
+/dist
+/coverage
+/.nx/cache
+stats.html
 pnpm-lock.yaml
-
-# Docker
-Dockerfile
-.dockerignore
-docker-compose.yml
+compose-dev.yml
+compose.yml

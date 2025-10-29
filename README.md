@@ -1,179 +1,116 @@
-<img src="/client/public/logo/dark.svg" alt="Reactive Resume" width="256px" height="256px" />
+<div align="center" markdown="1">
+  <a href="https://go.warp.dev/Reactive-Resume">
+    <img alt="Warp Sponsorship" width="400" src="https://github.com/warpdotdev/brand-assets/blob/main/Github/Sponsor/Warp-Github-LG-03.png?raw=true" />
+  </a>
+
+### [Warp, built for coding with multiple AI agents.](https://go.warp.dev/Reactive-Resume)
+
+[Available for MacOS, Linux, & Windows](https://go.warp.dev/Reactive-Resume)<br>
+
+---
+
+<img alt="Reactive Resume" width="800" src="https://i.imgur.com/FFc4nyZ.jpg" />
+
+![App Version](https://img.shields.io/github/package-json/version/AmruthPillai/Reactive-Resume?label=version)
+[![Docker Pulls](https://img.shields.io/docker/pulls/amruthpillai/reactive-resume)](https://hub.docker.com/repository/docker/amruthpillai/reactive-resume)
+[![GitHub Sponsors](https://img.shields.io/github/sponsors/AmruthPillai)](https://github.com/sponsors/AmruthPillai)
+[![Crowdin](https://badges.crowdin.net/reactive-resume/localized.svg)](https://crowdin.com/project/reactive-resume)
+[![Discord](https://img.shields.io/discord/1173518977851473940?label=discord&link=https%3A%2F%2Fdiscord.gg%2FhzwkZbyvUW)](https://discord.gg/hzwkZbyvUW)
 
 # Reactive Resume
 
-[![Project Version](https://img.shields.io/github/package-json/v/AmruthPillai/Reactive-Resume?style=flat-square)](https://github.com/AmruthPillai/Reactive-Resume/releases)
-[![Project License](https://img.shields.io/github/license/AmruthPillai/Reactive-Resume?style=flat-square)](https://github.com/AmruthPillai/Reactive-Resume/blob/main/LICENSE)
-[![Crowdin](https://badges.crowdin.net/reactive-resume/localized.svg)](https://translate.rxresu.me)
-[![Docker Pulls](https://img.shields.io/docker/pulls/amruthpillai/reactive-resume?style=flat-square)](https://hub.docker.com/r/amruthpillai/reactive-resume)
-![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/AmruthPillai/Reactive-Resume/docker-build-push.yml?branch=main&label=docker%20build&style=flat-square)
-[![Gitpod](https://img.shields.io/badge/Contribute%20with-Gitpod-908a85?logo=gitpod)](https://gitpod.io/#https://github.com/AmruthPillai/Reactive-Resume)
-[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FAmruthPillai%2FReactive-Resume.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FAmruthPillai%2FReactive-Resume?ref=badge_shield)
+A free and open-source resume builder that simplifies the process of creating, updating, and sharing your resume.
 
-## [Go to App](https://rxresu.me) | [Docs](https://docs.rxresu.me)
+### [Go to App](https://rxresu.me/) | [Docs](https://docs.rxresu.me/)
 
-Reactive Resume is a free and open source resume builder that’s built to make the mundane tasks of creating, updating and sharing your resume as easy as 1, 2, 3. With this app, you can create multiple resumes, share them with recruiters through a unique link and print as PDF, all for free, no advertisements, without losing the integrity and privacy of your data.
+</div>
 
-You have complete control over what goes into your resume, how it looks, what colors, what templates, even the layout in which sections placed. Want a dark mode resume? It’s as easy as editing 3 values and you’re done. You don’t need to wait to see your changes either. Everything you type, everything you change, appears immediately on your resume and gets updated in real time.
+## Description
 
-## ❗️ Important Notice
+Reactive Resume is a free and open-source resume builder that simplifies the process of creating, updating, and sharing your resume. With zero user tracking or advertising, your privacy is a top priority. The platform is extremely user-friendly and can be self-hosted in less than 30 seconds if you wish to own your data completely.
 
-Due to increasing and recurring costs from Google Cloud, I would have to take down the Version 1 and Version 2 editions of the application that live on https://v1.rxresu.me/ and https://v2.rxresu.me/ respectively.
+It's available in multiple languages and comes packed with features such as real-time editing, dozens of templates, drag-and-drop customisation, and integration with OpenAI for enhancing your writing.
 
-I plan to take down the servers on 1st September 2023, so if you have any data on the earlier versions, please migrate it over to the latest version on https://rxresu.me/ as soon as you can.
+You can share a personalised link of your resume to potential employers, track its views or downloads, and customise your page layout by dragging-and-dropping sections. The platform also supports various font options and provides dozens of templates to choose from. And yes, there's even a dark mode for a more comfortable viewing experience.
 
-The current version will remain unchanged, and is still actively supported. It will have no effect on these changes.
+Start creating your standout resume with Reactive Resume today!
 
-Thank you to the 400,000+ people using the app! 🙏
+## Templates
 
-## Table of Contents
+| Azurill                                                                 | Bronzor                                                                 | Chikorita                                                                 |
+| ----------------------------------------------------------------------- | ----------------------------------------------------------------------- | ------------------------------------------------------------------------- |
+| <img src="./apps/client/public/templates/jpg/azurill.jpg" width="200px" /> | <img src="./apps/client/public/templates/jpg/bronzor.jpg" width="200px" /> | <img src="./apps/client/public/templates/jpg/chikorita.jpg" width="200px" /> |
 
-- [Reactive Resume](#reactive-resume)
-  - [Go to App | Docs](#go-to-app--docs)
-  - [Table of Contents](#table-of-contents)
-  - [Features](#features)
-  - [Languages](#languages)
-  - [Tutorial](#tutorial)
-  - [Build from Source](#build-from-source)
-  - [Contributing](#contributing)
-  - [Report Bugs and Feature Requests](#report-bugs-and-feature-requests)
-  - [Donations](#donations)
-    - [GitHub Sponsor](#github-sponsor)
-    - [PayPal](#paypal)
-  - [GitHub Star History](#github-star-history)
-  - [Infrastructure](#infrastructure)
-  - [Contributors Wall](#contributors-wall)
-  - [License](#license)
+| Ditto                                                                | Gengar                                                                 | Glalie                                                                 |
+| -------------------------------------------------------------------- | ---------------------------------------------------------------------- | ---------------------------------------------------------------------- |
+| <img src="./apps/client/public/templates/jpg/ditto.jpg" width="200px" /> | <img src="./apps/client/public/templates/jpg/gengar.jpg" width="200px" /> | <img src="./apps/client/public/templates/jpg/glalie.jpg" width="200px" /> |
+
+| Kakuna                                                                 | Leafish                                                                 | Nosepass                                                                 |
+| ---------------------------------------------------------------------- | ----------------------------------------------------------------------- | ------------------------------------------------------------------------ |
+| <img src="./apps/client/public/templates/jpg/kakuna.jpg" width="200px" /> | <img src="./apps/client/public/templates/jpg/leafish.jpg" width="200px" /> | <img src="./apps/client/public/templates/jpg/nosepass.jpg" width="200px" /> |
+
+| Onyx                                                                | Pikachu                                                                 | Rhyhorn                                                                 |
+| ------------------------------------------------------------------- | ----------------------------------------------------------------------- | ----------------------------------------------------------------------- |
+| <img src="./apps/client/public/templates/jpg/onyx.jpg" width="200px" /> | <img src="./apps/client/public/templates/jpg/pikachu.jpg" width="200px" /> | <img src="./apps/client/public/templates/jpg/rhyhorn.jpg" width="200px" /> |
 
 ## Features
 
-- Free, forever
-- No Advertising
-- No User Tracking
-- Sync your data across devices
-- Accessible in multiple languages
-- Import data from [LinkedIn](https://www.linkedin.com/), [JSON Resume](https://jsonresume.org/)
-- Manage multiple resumes with one account
-- Open Source (with large community support)
-- Send your resume to others with a unique sharable link
-- Pick any font from [Google Fonts](https://fonts.google.com/) to use on your resume
-- Choose from 6 vibrant templates and more coming soon
-- Export your resume to JSON or PDF format with just one click
-- Create an account using your email, or just Sign in with Google
-- Mix and match colors to any degree, even a dark mode resume?
-- Add sections, add pages and change layouts the way you want to
-- Tailor-made Backend and Database, isolated from Google, Amazon etc.
-- **Oh, and did I mention that it's free?**
+- **Free, forever** and open-source
+- No telemetry, user tracking or advertising
+- You can self-host the application in less than 30 seconds
+- **Available in multiple languages** ([help add/improve your language here](https://translate.rxresu.me/))
+- Use your email address (or a throw-away address, no problem) to create an account
+- You can also sign in with your GitHub or Google account, and even set up two-factor authentication for extra security
+- Create as many resumes as you like under a single account, optimising each resume for every job application based on its description for a higher ATS score
+- **Bring your own OpenAI API key** and unlock features such as improving your writing, fixing spelling and grammar or changing the tone of your text in one-click
+- Translate your resume into any language using ChatGPT and import it back for easier editing
+- Create single page resumes or a resume that spans multiple pages easily
+- Customize the colours and layouts to add a personal touch to your resume
+- Customise your page layout as you like just by dragging-and-dropping sections
+- Create custom sections that are specific to your industry if the existing ones don't fit
+- Jot down personal notes specific to your resume that's only visible to you
+- Lock a resume to prevent making any further edits (useful for master templates)
+- **Dozens of templates** to choose from, ranging from professional to modern
+- Design your resume using the standardised EuroPass design template
+- Supports printing resumes in A4 or Letter page formats
+- Design your resume with any font that's available on [Google Fonts](https://fonts.google.com/)
+- **Share a personalised link of your resume** to companies or recruiters for them to get the latest updates
+- You can track the number of views or downloads your public resume has received
+- Built with state-of-the-art (at the moment) and dependable technologies that's battle tested and peer reviewed by the open-source community on GitHub
+- **MIT License**, so do what you like with the code as long as you credit the original author
+- And yes, there’s a dark mode too 🌓
 
-## Languages
+## Built With
 
-- Amharic (አማርኛ)
-- Arabic (اَلْعَرَبِيَّةُ)
-- Bengali (বাংলা)
-- Bulgarian (български)
-- Catalan (Valencian)
-- Chinese (中文)
-- Czech (čeština)
-- Danish (Dansk)
-- Dutch (Nederlands)
-- English
-- Finnish (Suomi)
-- French (Français)
-- German (Deutsch)
-- Greek (Ελληνικά)
-- Hebrew (Ivrit)
-- Hindi (हिन्दी)
-- Hungarian (Magyar)
-- Indonesian (Bahasa Indonesia)
-- Italian (Italiano)
-- Japanese (日本語)
-- Kannada (ಕನ್ನಡ)
-- Khmer (ភាសាខ្មែរ)
-- Korean (한국어)
-- Malayalam (മലയാളം)
-- Marathi (मराठी)
-- Nepali (नेपाली)
-- Norwegian (Norsk)
-- Odia (ଓଡ଼ିଆ)
-- Persian (فارسی)
-- Polish (Polski)
-- Portuguese (Português)
-- Romanian (limba română)
-- Russian (русский)
-- Serbian (српски језик)
-- Spanish (Español)
-- Swedish (Svenska)
-- Tamil (தமிழ்)
-- Turkish (Türkçe)
-- Ukrainian (Українська мова)
-- Vietnamese (Tiếng Việt)
+- React (Vite), for the frontend
+- NestJS, for the backend
+- Postgres (primary database)
+- Prisma ORM, which frees you to switch to any other relational database with a few minor changes in the code
+- Minio (for object storage: to store avatars, resume PDFs and previews)
+- Browserless (for headless chrome, to print PDFs and generate previews)
+- SMTP Server (to send password recovery emails)
+- GitHub/Google OAuth (for quickly authenticating users)
+- LinguiJS and Crowdin (for translation management and localization)
 
-Help by [translating Reactive Resume](https://translate.rxresu.me) to your language!
+## Star History
 
-## Tutorial
-
-The docs include an extensive [Tutorial](https://docs.rxresu.me/tutorial) section which outline the features of Reactive Resume and help you through building your first resume on the app.
-
-## Build from Source
-
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/AmruthPillai/Reactive-Resume)
-
-Initially building the image and project on Gitpod will take at least ~10 minutes, so please be patient on first launch.
-
-For extensive information on how to build the app on your local machine, head over to the docs [Source Code](https://docs.rxresu.me/source-code) section.
-
-## Contributing
-
-This project makes use of [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/) style and workflow for commit messages to ensure that the CHANGELOG is auto-generated. In general, this project follows the "fork-and-pull" Git workflow.
-
-1. **Fork** the repo on GitHub
-2. **Clone** the project to your own machine
-3. **Commit** changes to your own branch
-4. **Push** your work back up to your fork
-5. Submit a **Pull Request** so that we can review your changes
-
-NOTE: Be sure to merge the latest from `main` before making a pull request!
-
-## Report Bugs and Feature Requests
-
-Use the [GitHub Issues](https://github.com/AmruthPillai/Reactive-Resume/issues/new/choose) platform to notify me about bugs or new features that you would like to see in Reactive Resume. Please check before creating new issues as there might already be one.
-
-## Donations
-
-Reactive Resume would be nothing without the folks who supported me and kept the project alive in the beginning, and your continued support is what keeps me going. If you found Reactive Resume to be useful, helpful or just insightful and appreciate the effort I took to make the project, please consider donating as little or as much as you can.
-
-### [GitHub Sponsor](https://github.com/sponsors/AmruthPillai)
-### [PayPal](https://paypal.me/RajaRajanA)
-
-## GitHub Star History
-
-[![Star History Chart](https://api.star-history.com/svg?repos=AmruthPillai/Reactive-Resume&type=Date)](https://star-history.com/#AmruthPillai/Reactive-Resume&Date)
-
-## Infrastructure
-
-- [Next.js](https://nextjs.org/), frontend
-- [NestJS](https://nestjs.com/), backend
-- [PostgreSQL](https://www.postgresql.org/), database
-- [DigitalOcean](https://www.digitalocean.com/), infrastructure provider
-- [Crowdin](https://translate.rxresu.me/), translation management platform
-
-&nbsp;
-
-<a href="https://pillai.xyz/digitalocean">
-  <img src="https://opensource.nyc3.cdn.digitaloceanspaces.com/attribution/assets/PoweredByDO/DO_Powered_by_Badge_blue.svg" width="200px" />
+<a href="https://star-history.com/#AmruthPillai/Reactive-Resume&Date">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=AmruthPillai/Reactive-Resume&type=Date&theme=dark" />
+    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=AmruthPillai/Reactive-Resume&type=Date" />
+    <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=AmruthPillai/Reactive-Resume&type=Date" />
+  </picture>
 </a>
-
-## Contributors Wall
-<a href="https://github.com/AmruthPillai/Reactive-Resume/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=AmruthPillai/Reactive-Resume" />
-</a>
-
-
-_Note: It may take up to 24h for the [contrib.rocks](https://contrib.rocks/image?repo=AmruthPillai/Reactive-Resume) plugin to update because it's refreshed once a day._
 
 ## License
 
-Reactive Resume is packaged and distributed using the [MIT License](https://choosealicense.com/licenses/mit/) which allows for commercial use, distribution, modification and private use provided that all copies of the software contain the same license and copyright.
+Reactive Resume is packaged and distributed using the [MIT License](/LICENSE.md) which allows for commercial use, distribution, modification and private use provided that all copies of the software contain the same license and copyright.
 
 _By the community, for the community._  
-A passion project by [Amruth Pillai](https://amruthpillai.com/)
+A passion project by [Amruth Pillai](https://www.amruthpillai.com/)
+
+<p>
+  <a href="https://m.do.co/c/ceae1fff245e">
+    <img src="https://opensource.nyc3.cdn.digitaloceanspaces.com/attribution/assets/PoweredByDO/DO_Powered_by_Badge_blue.svg" width="200px">
+  </a>
+</p>
